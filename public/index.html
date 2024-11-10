@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Welcome to Your Todo App</h1>
+
+    <div id="all-forms">
+      <form id="get-todo-form">
+        <h2>Read Todo</h2>
+        <label for="title">Title:</label>
+        <input
+          class="title"
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Title of your todo:"
+          required
+        /><br />
+        <div id="read-error"></div>
+        <input type="submit" />
+      </form>
+
+      <form id="create-todo-form">
+        <h2>Create Todo</h2>
+        <label for="title2">Title:</label>
+        <input
+          class="title"
+          type="text"
+          id="title2"
+          name="title"
+          placeholder="Title for you Todo"
+          required
+        />
+        <label for="detail">Full:</label>
+        <input
+          type="text"
+          id="detail"
+          name="detail"
+          placeholder="Describe your Todo"
+          required
+        />
+        <input type="submit" />
+      </form>
+
+      <form id="update-todo-form">
+        <h2>Update Todo</h2>
+        <label for="prevTitle">Prev:</label>
+        <input
+          class="title"
+          type="text"
+          id="prevTitle"
+          name="prevTitle"
+          placeholder="Previous Title"
+          required
+        />
+        <label for="newTitle">Title:</label>
+        <input
+          class="title"
+          type="text"
+          id="newTitle"
+          name="title"
+          placeholder="Updated Title"
+          required
+        />
+        <label for="newDetail">Full:</label>
+        <input
+          type="text"
+          name="detail"
+          id="newDetail"
+          placeholder="Updated Detail"
+          required
+        />
+        <div id="update-error"></div>
+        <input type="submit" name="" id="" />
+      </form>
+
+      <form id="delete-todo-form">
+        <h2>Delete Todo</h2>
+        <label for="delTitle">Title:</label>
+        <input
+          class="title"
+          type="text"
+          id="delTitle"
+          name="title"
+          placeholder="Todo's Title"
+          required
+        />
+        <div id="delete-error"></div>
+        <input type="submit" />
+      </form>
+    </div>
+
+    <div id="get-todos-div">
+      <button id="btn">Get Todos</button>
+      <ul id="output"></ul>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

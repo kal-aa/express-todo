@@ -1,0 +1,138 @@
+      body {
+        background-color: rgb(7, 7, 46); 
+        color: white;
+      }
+      h1 {
+        text-align: center;
+      }
+
+      #all-forms {
+        max-width: 95%;
+        margin: 5px auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fx 1fx;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        grid-template-areas:
+          "get create"
+          "update delete";
+      }
+      #get-todo-form {
+        grid-area: get;
+      }
+
+      #create-todo-form {
+        grid-area: create;
+      }
+
+      #update-todo-form {
+        grid-area: update;
+      }
+
+      #delete-todo-form {
+        grid-area: delete;
+      }
+
+      #get-todos-div {
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 50px;
+      }
+      #get-todos-div h3 {
+        text-align: left;
+        color: yellow
+      }
+
+      #get-todos-div ul {
+        list-style-type: decimal;
+      } 
+
+      #get-todos-div li:hover {
+        text-decoration: line-through;
+        text-decoration-color: black;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+      }
+
+      #get-todos-div p {
+        margin-top: -15px;
+        text-align: left;
+        padding-left: 10px
+      }
+
+      #get-todos-div h2 {
+        margin-bottom: -3px
+      }
+
+      #get-todos-div label {
+        text-decoration: underline;
+        color: yellow;
+        font-size: 20px;
+      }
+
+      #get-todos-div button {
+        background-color: rgba(183, 1, 255, 0.329);
+        color: yellow;
+        padding: 8px 6px;
+        border-style: none;
+        border-left: 2px solid white;
+        border-bottom: 1px solid white;
+        border-radius: 10px;
+        transition: 0.2s;
+      }
+
+      #get-todos-div button:hover {
+        border-right: 2px solid white;
+        border-top: 1px solid white;
+        border-bottom: none;
+        border-left: none;
+      }
+
+      #get-todos-div button:active {
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+      }
+
+
+       input{
+        
+        margin-top: 5px;
+        padding: 4px 6px;
+        border-radius: 8px;
+        border-style: none
+      }
+
+      input:focus {
+        background-color: black;
+        color: white;
+      }
+
+      .title {
+        text-transform: lowercase; 
+      }
+
+      #read-error, 
+      #update-error, 
+      #delete-error {
+        color: red;
+      }
+
+      #get-todo-form h2 {
+        color: green;
+      }
+
+      #create-todo-form h2 {
+        color: yellow;
+      }
+
+      #update-todo-form h2 {
+        color: gray;
+      }
+
+      #delete-todo-form h2 {
+        color: red;
+      }
